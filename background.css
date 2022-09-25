@@ -6,9 +6,9 @@ body {
     grid-row-gap: 0px;
     }
     
-    header { grid-area: 1 / 1 / 2 / 7; border: solid lack; transition: 1s;}
-    .right { grid-area: 2 / 4 / 6 / 7; border: black olid; transition: 1s;}
-    .left { grid-area: 2 / 1 / 6 / 4; border: solid lack; transition: 1s;}
+    header { grid-area: 1 / 1 / 2 / 7; }
+    .right { grid-area: 2 / 4 / 6 / 7; }
+    .left { grid-area: 2 / 1 / 6 / 4;  }
 
     
 
