@@ -16,6 +16,9 @@
         z-index: 10;
     
         display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+
         flex-direction: row;
         justify-content: end;
         align-items: center;
@@ -26,6 +29,9 @@
     body nav ul {
 
         display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        
         flex-direction: row;
         gap: 2rem; 
         margin: 0 2rem;
