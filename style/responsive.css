@@ -115,7 +115,12 @@
     
     .cv {
         width: 100%;
+    
     }
+    .cv span {
+        display: none;
+    }
+
 
     .cv > ul {
         max-width: 100% !important ;
