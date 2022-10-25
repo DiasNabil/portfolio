@@ -25,7 +25,8 @@
     }
 
     body nav ul {
-
+        list-style: none;
+        padding: none;
         display: flex;
 
 
@@ -37,6 +38,8 @@
 
     body nav ul .anchor {
         color: var(--second-fc);
+        list-style: none;
+        padding: none;
         -webkit-margin : 2rem;
     }
 
