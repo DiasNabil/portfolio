@@ -124,13 +124,14 @@
 
     .cv > ul {
         max-width: 100% !important ;
+        
 
         align-items: flex-end;
         justify-content: space-around;
     }
 
     .cv > ul > li {
-        height: 90%;
+        height: 100%;
 
         padding-left: 2rem;
 

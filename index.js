@@ -2,10 +2,6 @@ const navButton = document.querySelector('.nav-toggler')
 const anchor = document.querySelectorAll('.anchor')
 const nav = document.querySelector('nav')
 
-const cvScroll = document.querySelector('.cv')
-
-
-
 
 // eventlistener sur le button et les encres pour animation Toggler
 
