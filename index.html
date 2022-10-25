@@ -1,56 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nabil Said Portfolio">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <link rel="stylesheet" href="./index.css">
-  <link rel="stylesheet" href="./font.css">
-  <link rel="stylesheet" href="./background.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="/style/normalive.css">
+    
+    
+    
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/style/responsive.css">
 
-  <link rel="icon" type="image/png" href="./asset/logo blanc.png" />
-  <title>Nabil Said | Front End Developer </title>
+    <title>Said Nabil | Portfolio</title>
 </head>
 
 <body>
-
-    <header>
-        <img src="./asset/logo.png" alt="logo">
+    <nav>
         <ul>
-            <li><a href="https://github.com/DiasNabil">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/nabildias/">Linkedin</a></li>
-            <li><a href="mailto:diasnabil.pro@protonmail.com">Mail</a></li>
+            <li><a class='anchor' href="#curriculum">CURRICULUM VITAE</a></li>
+            <li><a class='anchor' href="#projets">PROJETS</a></li>
+            <li><a class='anchor' href="#contact">CONTACT</a></li>
         </ul>
-    </header>
-    <section class="left">
-        <h1>
-            NABIL <br>
-            SAID <br>
-            <span class="encre"><span class="slide">Front end</span></span>
-            <span class="encre"><span class="slide">Developer</span></span>
-            
-            
-        </h1>
+    </nav>
+
+    <div class="bar">
+        <button type="button" aria-label="toggle-navigation" class="nav-toggler fixed-top ">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+        </button>
+    </div>
 
 
-
-    </section>
-
-
-
-
-    <section class="right">
+    <section class="main">
         
-        <a href="https://diasnabil.github.io/compteur/" class="item" style="background-image: url(./asset/Roadman.png)" ></a>
-        <a href="https://diasnabil.github.io/Helios/" class="item" style="background-image: url(./asset/Helios.png)"></a>
-        <a href="https://diasnabil.github.io/W101/index.html" class="item" style="background-image: url(./asset/W101.png)"></a>
+        <div id="landing">
+            
+                <div><p>SAID NABIL</p></div>
+                <h1>PORTFOLIO</h1>
+                <div><p>Front end developer</p></div>
+            
+        </div>
+        
+        <aside>
+            <ul>
+                <li class="trait"></li> 
+                <li><a target="_blank" href="https://github.com/DiasNabil"><i class='bx bxl-github' ></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/nabildias/"><i class='bx bxl-linkedin-square'></i></a></li>
+                <li class="trait"></li>
+            </ul>
+        </aside>
+
     </section>
 
+    <section id="curriculum">
+        <div class="intro">
+            <h2>A PROPOS DE MOI</h2>
+            <p>
+                Etant technicien en maintenance aéronautique dans l'armée de l'air, 
+                je me suis formé en autodidacte en parallèle de mon activité professionnelle 
+                avant d'entamer une formation en développement web depuis Octobre 2022.
+            </p>
+        </div>
+        
+        <div class="cv" >
+            <ul>
+                <li><h2>EXPERIENCES</h2>
+                    <ul>
+                        <li>
+                            <h3>Technicien Aéronautique</h3>
+                            <p>Base aérienne 123, Orléans-Bricy(45) <br> 2017 - 2022</p>
+                        </li>
 
+                        <li>
+                            <h3>Employé Polyvalent</h3>
+                            <p>ZARA, Qwartz(92) <br> 2017</p>
+                        </li>
+                    </ul>
+                </li>
 
+                <li><h2>FORMATIONS</h2>
+                    <ul>
+                        <li>
+                            <h3>Formation développeur web et web mobile</h3>
+                            <p>Webforce 3, Paris 18 (75) <br> 2022 </p>
+                        </li>
+                        <li>
+                            <h3>Brevet mécanicien non-naviguant</h3>
+                            <p>Base Aérienne 721, Rochefort (17) <br> 2019</p>
+                        </li>
+                        <li>
+                            <h3>Mathématique Informatique Physique Ingénierie</h3>
+                            <p>CY Cergy Paris Université, Pontoise (95) <br> 2015 - 2017</p>
+                        </li>
+                        <li>
+                            <h3>Baccalauréat Scientifique</h3>
+                            <p>Lycée Jean-Jacques Rousseau, Sarcelles (95) <br> 2015</p>
+                        </li>
+                    </ul>
+                </li>
 
- 
+                <li><h2>COMPETENCES</h2>
+                    <ul>
+                        <li>Html & Css</li>
+                        <li>Javascript</li>
+                        <li>Autodidacte</li>
+                        <li>Adaptation</li>
+                        <li>Travail d'équipe</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projets">
+
+        <h2>PROJETS</h2>
+        
+
+        <div class="items">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <a href="http://diasnabil.github.io/compteur/" target="_blank">
+                            <img src="/asset/Roadman.png" class="d-block w-100" alt="Projet compteur vue youtube">
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="http://diasnabil.github.io/Helios/" target="_blank">
+                            <img src="/asset/Helios.png" class="d-block w-100" alt="Projet Helios">
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="http://diasnabil.github.io/W101/index.html" target="_blank" >
+                            <img src="/asset/W101.png" class="d-block w-100" alt="Projet W101">
+                        </a>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" >
+        <div class="question">
+            <h2>
+                Une question ? <br> 
+                Un projet ? <br>
+
+            </h2>
+        </div>
+
+        <div class="formulaire">
+            <fieldset>
+                <div class="texte">
+                    <h3>Parlons-en</h3>
+                    <p>Afin d'établir un premier contact, remplissez simplement les champs ci-dessous.</p>
+                </div>
+
+                <div class="input mail mb-3">
+                    <label for="emailInfo" class="visually-hidden" class="form-label">Email address</label>
+                    <input required type="email" class="form-control" id="emailInfo" placeholder="Email">
+                </div>
+
+                <div class="input object mb-3 ">
+                    <label for="object" class="visually-hidden" class="form-label">Object</label>
+                    <input required type="text" class="form-control" id="object" placeholder="Objet">
+                </div>
+
+                <div class="input message mb-3">
+                    <label for="text" class="visually-hidden" class="form-label">Text Area</label>
+                    <textarea  required class="form-control" id="text" placeholder='Message' rows="5"></textarea>
+                </div>
+
+                <button type="submit" >Envoyer</button>
+            </fieldset>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>

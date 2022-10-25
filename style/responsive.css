@@ -1,0 +1,156 @@
+@media screen and (min-width: 800px) {
+    body h2 {
+        font-size: 1.5rem;
+    }
+
+    body .bar {
+        display: none;
+    }
+
+    body nav {
+
+        background: linear-gradient(0deg, rgba(10,5,16,0) 0%, rgba(10,5,16,1) 25%);
+        height: 10vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 10;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    
+        transform: translateY(0%);
+    }
+
+    body nav ul {
+
+        display: flex;
+        flex-direction: row;
+        gap: 2rem; 
+        margin: 0 2rem;
+        
+    }
+
+    body nav ul .anchor {
+        color: var(--second-fc);
+    }
+
+
+
+     body .main {
+
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #landing {
+    
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        position: absolute;
+    
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #landing div {
+    
+        width: 35% !important;
+    }
+
+    .main #landing h1 {
+        font-size: 5rem;
+        
+    }
+
+    .main  aside {
+
+        height: 100%;
+        width: 5%;
+        z-index: 2;
+        
+    }
+    
+    body .main aside ul {
+       
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+    
+    body aside ul .trait {
+        border: white solid 0.5px;
+        height: 65%;
+        width: 0;
+        margin: 20px auto;
+    }
+
+    body aside ul .trait:nth-child(1) {
+        display: none;
+    }
+    
+    .cv {
+        width: 100%;
+    }
+
+    .cv > ul {
+        max-width: 100% !important ;
+
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .cv > ul > li {
+        height: 90%;
+
+        padding-left: 2rem;
+
+    }
+
+    .cv > ul > li P {
+        font-size: 0.8em; ;
+    }
+
+
+    #projets h2 {
+
+        max-width: 85% !important;
+        align-items: center !important;
+        
+    }
+
+
+    #contact {
+        height: 90vh;
+        flex-direction: row;
+    }
+
+    .formulaire {
+
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .formulaire fieldset .texte h3 {
+        font-size: 1.5rem;
+    }
+
+    .formulaire fieldset .texte p {
+        font-size: 0.8rem;
+    }
+    
+}
