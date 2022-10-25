@@ -36,9 +36,15 @@
         color: var(--second-fc);
     }
 
+    .anchor:hover {
+    
+        color: var(--main-fc);
+    }
 
 
-     body .main {
+
+
+    body .main {
 
         flex-direction: row-reverse;
         justify-content: flex-end;
