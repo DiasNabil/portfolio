@@ -208,6 +208,10 @@ aside ul {
     gap: 2rem;
 }
 
+#curriculum .intro p {
+    text-align: center;
+}
+
 
 
 #curriculum .cv {
@@ -440,6 +444,7 @@ fieldset button {
     border-radius: 2px ;
     width: 40%;
     padding: 0.5rem;
+    margin: 1rem 0;
 
     font-family: benzin;
     letter-spacing: 1px;
