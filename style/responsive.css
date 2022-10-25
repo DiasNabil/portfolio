@@ -16,8 +16,6 @@
         z-index: 10;
     
         display: flex;
-        display: -webkit-box;
-        display: -webkit-flex;
 
         flex-direction: row;
         justify-content: end;
@@ -29,9 +27,8 @@
     body nav ul {
 
         display: flex;
-        display: -webkit-box;
-        display: -webkit-flex;
-        
+
+
         flex-direction: row;
         gap: 2rem; 
         margin: 0 2rem;
@@ -40,6 +37,7 @@
 
     body nav ul .anchor {
         color: var(--second-fc);
+        -webkit-margin : 2rem;
     }
 
     .anchor:hover {
