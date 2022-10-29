@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="style/reset.css">
@@ -136,50 +136,21 @@
         <h2>PROJETS</h2>
         
 
-        <div class="items">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousell">
 
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-                        <a href="http://diasnabil.github.io/compteur/" target="_blank">
-                            <img src="asset/Roadman.png" class="d-block w-100" alt="Projet compteur vue youtube">
-                        </a>
-                    </div>
-
-                    <div class="carousel-item">
-                        <a href="http://diasnabil.github.io/Helios/" target="_blank">
-                            <img src="asset/Helios.png" class="d-block w-100" alt="Projet Helios">
-                        </a>
-                    </div>
-
-                    <div class="carousel-item">
-                        <a href="http://diasnabil.github.io/W101/index.html" target="_blank" >
-                            <img src="asset/W101.png" class="d-block w-100" alt="Projet W101">
-                        </a>
-                    </div>
-
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-
-            </div>
-
+        
+                <span class="img" id="helios active"><a href="http://" target="_blank" ><img src="asset/Helios.png" alt="Helios project"></a></span>
+                <span class="img" id="roadman"><a href="http://" target="_blank" ><img  src="asset/Roadman.png" alt="YoutubeViewCounter + AudioPlayer"></a></span>
+                <span class="img" id="w101"><a href="http://" target="_blank"><img  src="asset/W101.png" alt="W101 project"></a></span>
+                
         </div>
+
+        <div class="slide-btn">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+        </div>
+
     </section>
 
     <section id="contact" >
@@ -191,7 +162,7 @@
             </h2>
         </div>
 
-        <div class="formulaire">
+        <form action="mail.php" method="post" class="formulaire">
             <fieldset>
                 <div class="texte">
                     <h3>Parlons-en</h3>
@@ -200,28 +171,27 @@
 
                 <div class="input mail mb-3">
                     <label for="emailInfo" class="visually-hidden" class="form-label">Email address</label>
-                    <input required type="email" class="form-control" id="emailInfo" placeholder="Email">
+                    <input required type="email" class="form-control" name="email" placeholder="Email">
                 </div>
 
                 <div class="input object mb-3 ">
                     <label for="object" class="visually-hidden" class="form-label">Object</label>
-                    <input required type="text" class="form-control" id="object" placeholder="Objet">
+                    <input required type="text" class="form-control" name="object" placeholder="Objet">
                 </div>
 
                 <div class="input message mb-3">
                     <label for="text" class="visually-hidden" class="form-label">Text Area</label>
-                    <textarea  required class="form-control" id="text" placeholder='Message' rows="5"></textarea>
+                    <textarea  required class="form-control" name="message" placeholder='Message' rows="5"></textarea>
                 </div>
 
                 <button type="submit" >Envoyer</button>
             </fieldset>
 
-        </div>
+        </form>
 
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,3 +1,32 @@
+
+
+
+@media screen and (max-width:759px) {
+
+    .cv > ul::-webkit-scrollbar {
+        display: none;
+    }
+
+
+
+    #projets .slide-btn {
+    
+        bottom: 7px;
+        gap: 1rem;
+    }
+
+    #projets .slide-btn .btn {
+   
+        width: 24px;
+        height: 6px;
+
+    }
+
+    
+    
+
+}
+
 @media screen and (min-width: 760px) {
     body h2 {
         font-size: 1.5rem;
@@ -47,9 +76,6 @@
     
         color: var(--main-fc);
     }
-
-
-
 
     body .main {
 
@@ -117,18 +143,31 @@
         width: 100%;
     
     }
+
     .cv span {
         display: none;
     }
 
-
-    .cv > ul {
-        max-width: 100% !important ;
-        
-
-        align-items: flex-end;
-        justify-content: space-around;
+    .cv > ul::-webkit-scrollbar {
+        width: 3px;
     }
+
+    /* Track */
+    .cv >ul ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  
+    }
+  
+  /* Handle */
+  .cv >ul::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  .cv >ul::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+    
 
     .cv > ul > li {
         height: 100%;
@@ -148,6 +187,7 @@
         align-items: center !important;
         
     }
+
 
 
     #contact {
@@ -171,5 +211,24 @@
     .formulaire fieldset .texte p {
         font-size: 0.8rem;
     }
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+
+    .cv > ul {
+        max-width: 100% !important ;
+        
+
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .cv > ul::-webkit-scrollbar {
+        display: none;
+    }
+
+
     
 }

@@ -215,31 +215,42 @@ aside ul {
 
 
 #curriculum .cv {
-    height: 50%;
-    
+    height: 55%;
+   
     display: flex;
     flex-direction: column;
 
     justify-content: center;
+    align-items: center;
 
 
 }
 
 .cv > ul {
-
+    
     width: 100%;
     max-width: 425px;
-    height: 90%;
+    
+    
 
     display: flex;
     
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.cv > ul p {
+ 
+    font-size: 0.8rem !important;
 }
 
 .cv span {
     width: 100%;
+    
     text-align: center;
+
+
 
     animation: myAnim 5s ease-out 2s infinite normal none;
 
@@ -261,9 +272,7 @@ aside ul {
 	}
 }
 
-.cv > ul::-webkit-scrollbar {
-    display: none;
-}
+
 
 
 .cv > ul > li {
@@ -319,41 +328,100 @@ aside ul {
 /* projet */ 
 
 #projets {
+
     align-items: center;
+    height: fit-content;
+
+    gap: 2rem;
+    padding: 5rem 0;
+
 }
 
 #projets h2 {
+
     width: 100%;
     max-width: 500px;
- 
-
-    height: 30%;
- 
+    height: 20%;
+    margin-bottom: 3rem;
 
     display: flex;
     align-items: flex-end;
-    margin: 2rem;
+    padding-left: 2rem;
 } 
 
-#projets .items {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
+#projets .carousell { 
+    width: 65%;
 
-.carousel{ 
-    height: 70%;
-    width: 100%;
-    max-width: 1000px;
-}
-
-.carousel-inner {
-    height: 100%;
     display: flex;
     
-    align-items: center;
+    
+    position: relative;
+    
+    
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    
+}
+
+#projets .carousell::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+#projets .carousell .img {
+    
+    min-width: 100%;
+
+    height: fit-content;
+
+    scroll-snap-align: start;
+}
+
+#projets .carousell .img a {
+
+    min-width: 100%;
+    display: inline-block;
+}
+
+#projets .carousell .img a img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+#projets .slide-btn {
+    z-index: 2;
+ 
+
+    display: flex;
+    gap: 2rem;
+}
+
+#projets .slide-btn .btn {
+    background: rgba(171, 167, 179,0.5);
+    transition: 300ms;
+    
+    width: 48px;
+    height: 12px;
+    
+    border: solid rgba(138, 135, 143, 1) 0.5px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+#projets .slide-btn .btn:hover {
+    background: rgba(116, 114, 119, 0.5);
+}
+
+#projets .slide-btn .btn.active {
+    background: rgba(116, 114, 119, 0.5);
 }
 
 
@@ -364,6 +432,9 @@ aside ul {
 #contact {
     justify-content: center;
     align-items: center;
+    gap: 5rem;
+
+    height: fit-content;
 }
 .question {
     height: 35%;
@@ -371,11 +442,16 @@ aside ul {
     max-width: 500px;
     width: 100%;
 
+
     display: flex;
     align-items: center;
     
 
     padding-left: 3rem ;
+}
+
+.question h2 {
+    font-size: 1.2rem;
 }
 
 /* Formulaire */
@@ -386,6 +462,9 @@ fieldset {
     border-radius: 5px;
     padding: 1rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     
     
     max-width: 500px;
@@ -395,11 +474,13 @@ fieldset .texte {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    
 }
 
 fieldset .texte h3 {
     text-align: center;
-    font-size: large;
+    font-size: 1.5rem;
     margin: 1rem 0;
 
 }
@@ -415,6 +496,8 @@ fieldset .input input, fieldset .input  textarea {
     background: none;
     border: none;
     border-bottom: solid  rgba(233, 229, 240, 0.5) 1.5px;
+    width: 100%;
+    padding-bottom: 0.5rem;
     
     color: rgba(233, 229, 240, 0.8); 
     font-family: benzin;
@@ -423,9 +506,20 @@ fieldset .input input, fieldset .input  textarea {
     transition: 500ms;
 }
 
+fieldset label {
+    display: none;
+}
+
 fieldset .input input:hover, fieldset .input textarea:hover {
 
     border-bottom: solid  rgba(233, 229, 240, 1) 1.5px;
+
+}
+
+fieldset .input input:focus, fieldset .input textarea:focus {
+
+   outline: none;
+   border-bottom: solid  rgba(233, 229, 240, 1) 1.5px;
 
 }
 
